@@ -10,7 +10,7 @@ Run the script from the CLI using  ./oa_postinstall.sh
 ```
 Note: Do not use "sh oa_postinstall.sh" because is breaks the script
 
-# Additional Information
+## Additional Information
 What version are you Running?
 To determine what OS version you are running execute the following at the command line interface (CLI)
 ```
@@ -32,7 +32,7 @@ At the bottom of the result from running the cpuinfo command you will find somet
 >Revision	: c03111 <br>
 >Serial		: 100000000000****  (My actual number is obfuscated) <br>
 
-# Mentions
+## Mentions
 Thank you to all the various contributors and blogs which added to this project. <br>
 Creator of OpenAuto Pro - Bluewave Studio http://bluewavestudio.io <br>
 Novaspirit.com https://www.novaspirit.com/2017/02/23/desktop-widget-raspberry-pi-using-conky/ <br>
