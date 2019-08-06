@@ -1,15 +1,15 @@
 # Customizations for my OpenAuto Pro based Carputer
-This repository holds all customization, files and scripts for my OpenAuto Pro based Carputer. I am currently running and testing this code on a Raspberry Pi 4 Model B with Raspbian Buster OS.  If your not sure what version your running, please refer to the instructions below.
+This repository holds all customization, files and scripts for my OpenAuto Pro based Carputer. I am currently running and testing this code on a Raspberry Pi 4 Model B with Raspbian Buster OS.  If your not sure what version your running, please refer to the Additional Information section below.  
 
 ## How to use the script
-Download the script to your RPI
-Extract the script
-Change to the directory where you extracted the script
-Run the script from the CLI
+* Download the script to your RPI
+* Extract the script
+* Change to the directory where you extracted the script
+* Run the script from the CLI
 ```
-pi@rpi4:~ $ ./oa_postinstall.sh
+./oa_postinstall.sh
 ```
-> **_Note: Do not use "sh oa_postinstall.sh" because is breaks the script_**
+**_Note: Do not use "sh oa_postinstall.sh" because is breaks the script_**
 
 ## Additional Information
 What version are you Running?
@@ -18,11 +18,11 @@ To determine what OS version you are running execute the following at the comman
 lsb_release -a
 ```
 At the bottom of the result from running the lsb_release command you will find something like what is shown below.
-No LSB modules are available. <br>
-Distributor ID:	Raspbian <br>
-Description:	Raspbian GNU/Linux 10 (buster) <br>
-Release:	10 <br>
-Codename:	buster <br>
+>No LSB modules are available. <br>
+>Distributor ID:	Raspbian <br>
+>Description:	Raspbian GNU/Linux 10 (buster) <br>
+>Release:	10 <br>
+>Codename:	buster <br>
 
 To determine what hardware version you are running execute the following at the command line interface (CLI)
 ```
@@ -34,7 +34,12 @@ At the bottom of the result from running the cpuinfo command you will find somet
 >Serial		: 100000000000****  (My actual number is obfuscated) <br>
 
 ## Mentions
-Thank you to all the various contributors and blogs which added to this project. <br>
-Creator of OpenAuto Pro - Bluewave Studio http://bluewavestudio.io <br>
+Thank you to all the various contributors and blogs which added to this project. Please find my Github repository here: https://github.com/frankpintosr<br>
+Bluewave Studio (OpenAuto Pro) http://bluewavestudio.io <br>
 Novaspirit.com https://www.novaspirit.com/2017/02/23/desktop-widget-raspberry-pi-using-conky/ <br>
-Brenden Matthews which can be found https://github.com/brndnmtthws/conky <br>
+Brenden Matthews https://github.com/brndnmtthws/conky <br>
+Sahaj Sarup https://github.com/ric96/zram <br>
+Björn Biesenbach https://github.com/elmo2k3/dabpi_ctl
+Vinny https://www.kubuntuforums.net/showthread.php/73166-Pulse-audio-problem?p=411532&viewfull=1#post411532
+Doug Hadfield https://www.raspberrypi.org/forums/viewtopic.php?t=161133#p1043263
+Gary Dalton http://www.intellamech.com/RaspberryPi-projects/rpi3_gps.html
