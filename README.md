@@ -34,7 +34,8 @@ At the bottom of the result from running the cpuinfo command you will find somet
 >Serial		: 100000000000****  (My actual number is obfuscated) <br>
 
 ## Mentions
-Thank you to all the various contributors and blogs which added to this project. Please find my Github repository here: https://github.com/frankpintosr<br>
+**Thank you to all the various contributors and blogs which added to this project!** <br>
+Please find my Github repository here: https://github.com/frankpintosr <br>
 Bluewave Studio (OpenAuto Pro) http://bluewavestudio.io <br>
 Novaspirit.com https://www.novaspirit.com/2017/02/23/desktop-widget-raspberry-pi-using-conky/ <br>
 Brenden Matthews https://github.com/brndnmtthws/conky <br>
