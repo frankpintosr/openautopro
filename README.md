@@ -12,7 +12,7 @@ This repository holds all customization, files and scripts for my OpenAuto Pro b
 **_Note: Do not use "sh oa_postinstall.sh" because is breaks the script_**
 
 ## Additional Information
-What version are you Running?
+### What hardware and OS versions are you Running? <br>
 To determine what OS version you are running execute the following at the command line interface (CLI)
 ```
 lsb_release -a
