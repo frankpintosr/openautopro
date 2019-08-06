@@ -39,7 +39,7 @@ Bluewave Studio (OpenAuto Pro) http://bluewavestudio.io <br>
 Novaspirit.com https://www.novaspirit.com/2017/02/23/desktop-widget-raspberry-pi-using-conky/ <br>
 Brenden Matthews https://github.com/brndnmtthws/conky <br>
 Sahaj Sarup https://github.com/ric96/zram <br>
-Björn Biesenbach https://github.com/elmo2k3/dabpi_ctl
-Vinny https://www.kubuntuforums.net/showthread.php/73166-Pulse-audio-problem?p=411532&viewfull=1#post411532
-Doug Hadfield https://www.raspberrypi.org/forums/viewtopic.php?t=161133#p1043263
-Gary Dalton http://www.intellamech.com/RaspberryPi-projects/rpi3_gps.html
+Björn Biesenbach https://github.com/elmo2k3/dabpi_ctl <br>
+Vinny https://www.kubuntuforums.net/showthread.php/73166-Pulse-audio-problem?p=411532&viewfull=1#post411532 <br>
+Doug Hadfield https://www.raspberrypi.org/forums/viewtopic.php?t=161133#p1043263 <br>
+Gary Dalton http://www.intellamech.com/RaspberryPi-projects/rpi3_gps.html <br>
