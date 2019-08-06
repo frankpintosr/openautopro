@@ -1,14 +1,15 @@
 # Customizations for my OpenAuto Pro based Carputer
 This repository holds all customization, files and scripts for my OpenAuto Pro based Carputer. I am currently running and testing this code on a Raspberry Pi 4 Model B with Raspbian Buster OS.  If your not sure what version your running, please refer to the instructions below.
 
-> How to use the script
-```
+## How to use the script
 Download the script to your RPI
 Extract the script
 Change to the directory where you extracted the script
-Run the script from the CLI using  ./oa_postinstall.sh
+Run the script from the CLI
 ```
-Note: Do not use "sh oa_postinstall.sh" because is breaks the script
+pi@rpi4:~ $ ./oa_postinstall.sh
+```
+> ** Note: Do not use "sh oa_postinstall.sh" because is breaks the script **
 
 ## Additional Information
 What version are you Running?
