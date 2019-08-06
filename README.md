@@ -9,7 +9,7 @@ Run the script from the CLI
 ```
 pi@rpi4:~ $ ./oa_postinstall.sh
 ```
-> ** Note: Do not use "sh oa_postinstall.sh" because is breaks the script **
+> **_Note: Do not use "sh oa_postinstall.sh" because is breaks the script_**
 
 ## Additional Information
 What version are you Running?
