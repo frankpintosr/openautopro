@@ -1,0 +1,8 @@
+#This file will create an entry for Navit in your desktop start menu
+[Desktop Entry]
+	Type=Application
+	Name=Navit
+	Comment=Turn by turn navigation
+	Exec=navit
+	Terminal=false
+Categories=Internet;Navigation;

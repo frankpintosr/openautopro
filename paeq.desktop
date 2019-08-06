@@ -1,0 +1,9 @@
+#This file will add PulseAudio EQ to your start menu on your desktop
+[Desktop Entry]
+	Type=Application
+	Name=Pulse Audio Equalizer
+	Comment=Detailed sounds adjustments
+	Icon=/usr/share/doc/pulseaudio-equalizer/pulseaudio.png
+	Exec=qpaeq
+	Terminal=false
+Categories=AudioVideo;Audio;Mixer;
