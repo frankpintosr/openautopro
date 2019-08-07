@@ -1,14 +1,18 @@
 #!/bin/bash
-#This script will allow the use of all 4 cores and set aside 1.5GB for zram
+# This script enables zram, an in-kernel compressed cache for swap pages.  https://en.wikipedia.org/wiki/Zram
+# The script will set aside 384MB per core for zram and specifies the LZ4 compression algorithm
+
 modprobe zram num_devices=4
 
-totalmem=`free | grep -e "^Mem:" | awk '{print $2}'`
-mem=$(( ($totalmem)* 512))
+echo '384M' > /sys/block/zram0/disksize
+echo '384M' > /sys/block/zram1/disksize
+echo '384M' > /sys/block/zram2/disksize
+echo '384M' > /sys/block/zram3/disksize
 
-echo $mem > /sys/block/zram0/disksize
-echo $mem > /sys/block/zram1/disksize
-echo $mem > /sys/block/zram2/disksize
-echo $mem > /sys/block/zram3/disksize
+echo 'lz4' > /sys/block/zram0/comp_algorithm
+echo 'lz4' > /sys/block/zram1/comp_algorithm
+echo 'lz4' > /sys/block/zram2/comp_algorithm
+echo 'lz4' > /sys/block/zram3/comp_algorithm
 
 mkswap /dev/zram0
 mkswap /dev/zram1
