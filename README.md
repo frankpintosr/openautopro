@@ -3,11 +3,16 @@ This repository holds all customization, files and scripts for my OpenAuto Pro b
 
 ## How to use the script
 * Download the script to your RPI
-* Extract the script
-* Change to the directory where you extracted the script
+```
+sudo wget -O /home/pi/Downloads/oa_postinstall.sh https://github.com/frankpintosr/openautopro/raw/master/oa_postinstall.sh
+```
+* Change to the directory where you downloaded the script
+```
+cd /home/pi/Downloads
+```
 * Run the script from the CLI
 ```
-./oa_postinstall.sh
+sudo ./oa_postinstall.sh
 ```
 **_Note: Do not use "sh oa_postinstall.sh" because is breaks the script_**
 
