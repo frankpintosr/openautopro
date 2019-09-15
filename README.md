@@ -6,9 +6,10 @@ This repository holds all customization, files and scripts for my OpenAuto Pro b
 ```
 sudo wget -O /home/pi/Downloads/oa_postinstall.sh https://github.com/frankpintosr/openautopro/raw/master/oa_postinstall.sh
 ```
-* Change to the directory where you downloaded the script
+* Change directory and make the script executeable
 ```
 cd /home/pi/Downloads
+sudo chmod +x /home/pi/Downloads/oa_postinstall.sh
 ```
 * Run the script from the CLI
 ```
