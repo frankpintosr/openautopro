@@ -21,7 +21,7 @@ sudo systemctl disable -q serial-getty@ttyS0.service
 
 #--------Enable UART
 sudo cp /boot/config.txt /boot/config.txt.backup
-sudo wget -O /boot/config.txt https://github.com/frankpintosr/uart/raw/master/config.txt
+sudo wget -O /boot/config.txt https://raw.githubusercontent.com/frankpintosr/openautopro/master/config.txt
 sudo cp /boot/cmdline.txt /boot/cmdline.txt.backup
 sudo wget -O /boot/cmdline.txt https://raw.githubusercontent.com/frankpintosr/openautopro/master/cmdline.txt
 #Connect uart with gpsd
