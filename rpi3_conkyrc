@@ -21,7 +21,7 @@ default_shade_color red
 default_outline_color green
 alignment top_right
 gap_x 10
-gap_y 10
+gap_y 50
 no_buffers yes
 uppercase no
 cpu_avg_samples 2
@@ -30,12 +30,12 @@ override_utf8_locale no
 use_spacer right
 
 TEXT
-${font Arial:size=20}${color Tan1}RPI${color Ivory}LINUX
-
-${voffset -90}
-${color DimGray}
-${font}
-${font Arial:bold:size=10}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
+#${font Arial:size=20}${color Tan1}RPI${color Ivory}LINUX
+#
+#${voffset -90}
+#${color DimGray}
+#${font}
+${font Arial:bold:size=10}${color Tan1}SYSTEM ${color DarkSlateGray}${hr 2}
 $font${color DimGray}$sysname $kernel $alignr $machine
 Frequency $alignr${freq_g cpu0}Ghz
 Uptime $alignr${uptime}
