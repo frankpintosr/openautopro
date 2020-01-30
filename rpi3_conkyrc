@@ -70,6 +70,3 @@ $font${color DimGray}IP on wlan0 $alignr ${addr wlan0}
 
 Down $alignr ${downspeed wlan0} kb/s
 Up $alignr ${upspeed wlan0} kb/s
-
-Downloaded: $alignr  ${totaldown wlan0}
-Uploaded: $alignr  ${totalup wlan0}
