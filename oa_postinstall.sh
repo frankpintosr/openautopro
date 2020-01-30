@@ -51,6 +51,8 @@ sudo apt-get -y install conky
 sudo wget -O /home/pi/.conkyrc https://raw.githubusercontent.com/frankpintosr/openautopro/master/rpi3_conkyrc
 sudo wget -O /usr/bin/conky.sh https://raw.githubusercontent.com/frankpintosr/openautopro/master/conky.sh
 sudo wget -O /etc/xdg/autostart/conky.desktop https://raw.githubusercontent.com/frankpintosr/openautopro/master/conky.desktop
+#Create Start Menu Item
+sudo wget -O /usr/share/applications/conky.desktop https://raw.githubusercontent.com/frankpintosr/openautopro/master/conky.desktop
 
 #--------Install PulseAudio EQ
 sudo apt-get -y install pulseaudio-equalizer
