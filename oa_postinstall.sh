@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script is designed to perform all the post OS install configuration steps for an OpenAuto Pro install
 # It was developed and tested on a Raspberry Pi 4 Model B with Raspbian Buster OS
-# For more information visit https://raw.githubusercontent.com/frankpintosr/
+# For more information visit https://github.com/frankpintosr
 
 #--------Check and install updates
 sudo sh -c "apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove"
