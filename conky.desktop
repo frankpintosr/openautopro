@@ -1,8 +1,8 @@
 #This file will add Conky as an application on the Start Menu in your desktop environment and add it to autostart on boot
 [Desktop Entry]
-Name=conky
+Name=Conky
 Type=Application
 Exec=sh /usr/bin/conky.sh
 Terminal=false
-Comment=system monitoring tool.
+Comment=system monitoring tool
 Categories=Utility;
