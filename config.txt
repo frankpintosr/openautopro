@@ -57,11 +57,14 @@ dtparam=audio=off
 
 [pi4]
 # Disable DRM VC4 V3D driver on top of the dispmanx display stack
-#dtoverlay=vc4-kms-v3d
-dtoverlay=vc4-fkms-v3d
+#dtoverlay=vc4-fkms-v3d
 max_framebuffers=2
 
 [all]
 gpu_mem=256
 enable_uart=1
+# For Raspberry Pi 3 and older only
+dtoverlay=vc4-kms-v3d
 dtoverlay=i2c-rtc,ds3231
+dtoverlay=pi3-disable-bt
+disable_splash=1
