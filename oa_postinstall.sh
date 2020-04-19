@@ -78,13 +78,13 @@ sudo wget -O /etc/rc.local https://raw.githubusercontent.com/frankpintosr/openau
 
 #--------Install and Configure Navit
 #Install Navit and prepare folders for map file
-sudo apt-get -y install navit espeak
-mkdir ~/.navit
-mkdir ~/maps
-sudo wget -O ~/.navit/navit.xml https://raw.githubusercontent.com/frankpintosr/openautopro/master/navit.xml
-read -sp "Press Enter to continue after going to http://maps9.navit-project.org and saving your mapfile to /home/pi/maps" 
-mv /home/pi/maps/*.bin /home/pi/maps/mapfile.bin
-sudo wget -O /usr/share/applications/navit.desktop https://raw.githubusercontent.com/frankpintosr/openautopro/master/navit.desktop
+#sudo apt-get -y install navit espeak
+#mkdir ~/.navit
+#mkdir ~/maps
+#sudo wget -O ~/.navit/navit.xml https://raw.githubusercontent.com/frankpintosr/openautopro/master/navit.xml
+#read -sp "Press Enter to continue after going to http://maps9.navit-project.org and saving your mapfile to /home/pi/maps" 
+#mv /home/pi/maps/*.bin /home/pi/maps/mapfile.bin
+#sudo wget -O /usr/share/applications/navit.desktop https://raw.githubusercontent.com/frankpintosr/openautopro/master/navit.desktop
 
 #--------Completion of script
 read -sp "The OpenAuto Pro post-install script is complete. Press Enter to reboot the Raspberry Pi. "
