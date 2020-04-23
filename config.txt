@@ -17,9 +17,8 @@
 
 # uncomment to force a console size. By default it will be display's size minus
 # overscan.
-framebuffer_width=1024
-framebuffer_height=600
-hdmi_cvt=1024 600 60 3 0 0 0
+#framebuffer_width=1024
+#framebuffer_height=600
 
 # uncomment if hdmi display is not detected and composite is being output
 hdmi_force_hotplug=1
@@ -27,6 +26,7 @@ hdmi_force_hotplug=1
 # uncomment to force a specific HDMI mode (this will force VGA)
 hdmi_group=2
 hdmi_mode=87
+hdmi_cvt=1024 600 60 3 0 0 0
 
 # uncomment to force a HDMI mode rather than DVI. This can make audio work in
 # DMT (computer monitor) modes
@@ -57,14 +57,14 @@ dtparam=audio=off
 
 [pi4]
 # Disable DRM VC4 V3D driver on top of the dispmanx display stack
-#dtoverlay=vc4-fkms-v3d
+dtoverlay=vc4-fkms-v3d
 max_framebuffers=2
 
 [all]
 gpu_mem=256
 enable_uart=1
 # For Raspberry Pi 3 and older only
-dtoverlay=vc4-kms-v3d
+#dtoverlay=vc4-kms-v3d
 dtoverlay=i2c-rtc,ds3231
 dtoverlay=pi3-disable-bt
 disable_splash=1
