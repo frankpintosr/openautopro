@@ -6,6 +6,10 @@
 #--------Check and install updates
 sudo sh -c "apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove"
 
+#--------Enable NTFS and exFat
+sudo apt-get install exfat-fuse exfat-utils
+sudo apt-get install ntfs-3g
+
 #--------The Next section is for the GPS Install
 #Installs gpsd clients
 sudo apt-get -y install gpsd gpsd-clients python-gps
