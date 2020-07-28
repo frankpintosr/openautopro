@@ -10,8 +10,8 @@ sudo cp /boot/cmdline.txt /boot/cmdline.txt.backup
 sudo wget -O /boot/cmdline.txt https://github.com/frankpintosr/openautopro/raw/master/cmdline.txt
 
 #--------Enable NTFS and exFat
-sudo apt-get install exfat-fuse exfat-utils
-sudo apt-get install ntfs-3g
+sudo apt-get -y install exfat-fuse exfat-utils
+sudo apt-get -y install ntfs-3g
 
 #--------Check and install updates
 sudo sh -c "apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove"
