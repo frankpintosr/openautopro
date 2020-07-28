@@ -1,0 +1,17 @@
+#Created by 765GHF https://bluewavestudio.io/community/showthread.php?tid=1128&pid=6559#pid6559
+
+[Unit]
+Description=Script to monitor ignition status
+ConditionPathExists=/opt/power-monitor/power-monitor.py
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -u /opt/power-monitor/power-monitor.py
+Restart=on-failure
+StartLimitInterval=60
+RestartSec=5
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target
