@@ -52,6 +52,21 @@ sudo hwclock -w
 #Set the system time from the RTC
 sudo hwclock -s
 
+#--------Enable rotary encoder
+sudo apt -y install evtest xdotool 
+# Overlays for controlling rotary switch included in https://github.com/frankpintosr/openautopro/raw/master/config.txt 
+#Rotary switch control is configured for GPIO 6 (pin 31) and GPIO 12 (pin 32).
+#Pushbutton control is configured for GPIO 13 (pin 33)
+# Volume Indicator Script
+sudo mkdir /home/pi/software/
+sudo mkdir /home/pi/software/vol_indicator/
+sudo wget -O  /home/pi/software/vol_indicator/vol_indicator.py   https://github.com/frankpintosr/openautopro/raw/master/vol_indicator.py
+#Make the script executable
+sudo chmod +x /home/pi/software/vol_indicator/vol_indicator.py
+#Volume knob shortcut and autostart
+sudo mkdir /home/pi/.config/autostart
+sudo wget -O /home/pi/.config/autostart/knob.desktop https://github.com/frankpintosr/openautopro/raw/master/knob.desktop 
+
 #--------Install Bluetooth Manager GUI
 sudo apt-get -y install bluetooth bluez blueman
 
