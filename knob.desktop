@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=/home/pi/software/vol_indicator/vol_indicator.py
+Name=Rotary Dial
+Type=Application
+Version=1.0.0
+StartupNotify=false
+Terminal=true
+Encoding=UTF-8
+X-LXQt-Need-Tray=true
+Categories=Accessories
