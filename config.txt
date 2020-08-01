@@ -8,6 +8,7 @@ dtoverlay=i2c-rtc,ds3231
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=off
 dtoverlay=pi3-disable-bt
+dtparam=spi=on
 disable_splash=1
 
 # Enable DRM VC4 V3D driver on top of the dispmanx display stack
@@ -20,6 +21,12 @@ hdmi_force_hotplug=1
 hdmi_group=2
 hdmi_mode=87
 hdmi_cvt=1024 600 60 3 0 0 0
+
+# Rotary switch control is configured for GPIO 6 (pin 31) and GPIO 12 (pin 32).
+dtoverlay=rotary-encoder,pin_a=6,pin_b=12,relative_axis=1
+
+# Pushbutton control is configured for GPIO 13 (pin 33)
+dtoverlay=gpio-key,gpio=13,label=MUTE,keycode=113
 
 # Enable UART for NEO-6M GY-GPS6M Module
 enable_uart=1
