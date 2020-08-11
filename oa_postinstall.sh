@@ -39,6 +39,13 @@ sudo wget -O /etc/default/gpsd https://github.com/frankpintosr/openautopro/raw/m
 sudo systemctl enable -q gpsd.socket
 sudo systemctl start -q gpsd.socket
 
+#--------UART Utility
+sudo wget -O ./uart_control https://github.com/frankpintosr/rpi_boat_utils/blob/master/uart_control/uart_control
+sudo chmod +x uart_control
+sudo ./uart_control status
+# GPIO option makes the UART available to GPIO pins 14 and 15:
+sudo ./uart_control gpio
+
 #--------Enable the Real Time Clock
 #Replace your /lib/udev/hwclock-set
 sudo cp /lib/udev/hwclock-set /lib/udev/hwclock-set.backup
