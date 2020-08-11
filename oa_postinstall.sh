@@ -74,6 +74,22 @@ sudo chmod +x /home/pi/software/vol_indicator/vol_indicator.py
 sudo mkdir /home/pi/.config/autostart
 sudo wget -O /home/pi/.config/autostart/knob.desktop https://github.com/frankpintosr/openautopro/raw/master/knob.desktop 
 
+#--------Setup Shutdown Scripts and Service
+#Create directory /opt/power-monitor
+sudo mkdir /opt/power-monitor
+#Create file /home/pi/power-monitor.py
+sudo wget -O /opt/power-monitor/power-monitor.py https://github.com/frankpintosr/openautopro/raw/master/power-monitor.py
+#Set owner and executable
+sudo chown root:root /opt/power-monitor/power-monitor.py
+sudo chmod +x /opt/power-monitor/power-monitor.py
+#Create shutdown service 
+#Create file /home/pi/power-monitor.py
+sudo wget -O  /etc/systemd/system/power-monitor.service https://github.com/frankpintosr/openautopro/raw/master/power-monitor.service
+#Set owner and executable
+sudo chown root:root /etc/systemd/system/power-monitor.service
+sudo systemctl enable power-monitor.service
+sudo systemctl start power-monitor.service
+
 #--------Install Bluetooth Manager GUI
 sudo apt-get -y install bluetooth bluez blueman
 
